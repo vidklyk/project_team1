@@ -1,0 +1,147 @@
+.order-section {
+  padding: 80px 20px;
+  background-color: #7a3145;
+  align-items: center;
+}
+.describe-order {
+  margin-bottom: 40px;
+  max-width: 335px;
+}
+.visually-hidden {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 29px;
+}
+.text-harvest {
+  color: rgba(251, 251, 251, 0.3);
+}
+.description-benefits-order {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fbfbfb;
+}
+.modal-window {
+  position: absolute;
+  gap: 20px;
+  align-items: center;
+  border-radius: 30px;
+  padding: 40px 20px;
+  width: 335px;
+  max-height: 533px;
+  background-color: #fbfbfb;
+  overflow: auto;
+}
+.modal-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.083;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.text-from-us {
+  color: #7a3145;
+}
+.text-the-from {
+  color: #576f35;
+}
+.label-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-form {
+  border: 1px solid rgba(20, 20, 20, 0.2);
+  border-radius: 30px;
+  padding: 14px 220px 14px 16px;
+  width: 295px;
+  height: 46px;
+  background-color: transparent;
+  outline: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #141414;
+}
+.input-form:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.input-form:not(:placeholder-shown):valid {
+  border-color: green;
+}
+.text-valid,
+.text-invalid {
+  font-size: 14px;
+  padding-left: 20px;
+  margin-top: 4px;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+.input-form:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
+}
+.input-form:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.button-send {
+  display: block;
+  margin: 0 auto;
+  min-width: 160px;
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid gray;
+  border-radius: 30px;
+
+  cursor: pointer;
+}
+
+.button-send:is(:hover, :focus) {
+  border-color: brown;
+}
+@media screen and (min-width: 768px) {
+  .order-section {
+    height: 1576px;
+  }
+  .describe-order {
+    margin-bottom: 50px;
+    max-width: 768px;
+    padding: 0px 96px 0px 32px;
+  }
+  .visually-hidden {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  .description-benefits-order {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .order-section {
+    padding: 100px;
+    max-width: 1280px;
+    height: 977px;
+  }
+  .describe-order {
+    max-width: 751px;
+  }
+}
