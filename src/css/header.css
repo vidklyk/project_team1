@@ -1,7 +1,8 @@
 .page-header{
-padding-top:20px;
-background:transparent;
-position: fixed;
+padding-top: 20px;
+background: transparent;
+position: absolute;
+z-index: 999;
 }
 
 .header-container {
@@ -21,7 +22,7 @@ height: 16px;
 }
 
 .nav-list{
-    display:none;
+    display: none;
 }
 
 .header-button{
@@ -40,9 +41,9 @@ height: 16px;
 
 
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
- .page-header{
+ .page-header {
     padding-top: 32px;
  }   
 
@@ -60,15 +61,15 @@ padding-bottom: 11px;
  height: 18px;
  }
 
- .burger-btn{
+ .burger-btn {
     width: 40px;
     height: 40px;
  }
 }
 
 
-@media screen and (min-width:1280px){
-.header-nav{
+@media screen and (min-width:1280px) {
+.header-nav {
 display: flex;
 align-items: center;
  }
@@ -86,7 +87,7 @@ margin-left: 397px;
 
 }
 
-.menu-nav{
+.menu-nav {
 font-family: "Inter Tight", sans-serif;
  font-weight: 500;
 font-size: 16px;
@@ -101,9 +102,9 @@ padding: 12px;
 height: 44px;
 }
  
-.header-button{
+.header-button {
 border-radius: 30px;
-padding-top:16px;
+padding-top: 16px;
 padding-bottom: 16px;
 width: 157px;
 height: 52px;
@@ -120,11 +121,11 @@ cursor: pointer;
 justify-content: center;
 }
 
-.header-button:hover{
+.header-button:hover {
 background: #622133;
 }
 
-.burger-btn{
+.burger-btn {
     display: none;
 }
 
