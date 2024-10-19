@@ -1,1 +1,24 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #7A3145;
+    color: #fbfbfb;
+    justify-content: space-between;
+}
+/* Логотип компанії + Слоган компанії */
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+
+    font-weight: 500;
+font-size: 14px;
+
+/* line-height: 18px; */ 
+line-height: 1.28571;
+
+}
+
 
