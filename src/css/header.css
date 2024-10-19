@@ -1,4 +1,4 @@
-.page-header{
+.page-header {
 padding-top: 20px;
 background: transparent;
 position: absolute;
@@ -11,21 +11,21 @@ z-index: 999;
     justify-content: space-between;
 }
 
-.header-logo{
+.header-logo {
     padding-top: 8px;
     padding-bottom: 8px;
 }
 
-.header-logo-icon{
+.header-logo-icon {
 width: 168px;
 height: 16px;
 }
 
-.nav-list{
+.nav-list {
     display: none;
 }
 
-.header-button{
+.header-button {
     display: none;
 }
 
@@ -47,7 +47,7 @@ height: 16px;
     padding-top: 32px;
  }   
 
- .header-container{
+ .header-container {
     height: 52px;
  }
 
@@ -61,9 +61,9 @@ padding-bottom: 11px;
  height: 18px;
  }
 
- .burger-btn {
-    width: 40px;
-    height: 40px;
+.burger-btn {
+width: 40px;
+ height: 40px;
  }
 }
 
@@ -126,7 +126,7 @@ background: #622133;
 }
 
 .burger-btn {
-    display: none;
+display: none;
 }
 
 }
