@@ -1,393 +1,128 @@
-<!-- ТУТ НІЧОГО НЕ ЗМІНЮВАТИ!!! ЦЕ ФАЙЛ ТІМ-ЛІДА -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project_team1/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    />
-    <script type="module" crossorigin src="/project_team1/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project_team1/assets/index-wdBm5DbO.css">
+    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
   </head>
   <body>
-    <!-- HEADER SECTION
- 1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них. 
- 2.(Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це header секція, назва классів повинна бути повязана з цим - приклад class="header-title"-->
+    <header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <svg class="nav-logo-icon" width="100" height="30">
+          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
- <header class="page-header">
-    <div class="container header-container">
-<nav class="header-nav">
-<a class="header-logo">
-    <svg class="header-logo-icon" height="16" width="168">
-     <use href=""></use>
-    </svg>
-</a>
-<ul class="nav-list">
-<li><a class="menu-nav" href="./how-it-works.html">How It Works</a></li>
-<li><a class="menu-nav" href="./vegetables.html">Vegetables</a></li>
-<li><a class="menu-nav" href="./reviews.html">Reviews</a></li>
-</ul>
-</nav>
-<button type="button" class="header-button">Shop now</button>
-<button class="burger-btn" type="button">
-    <svg class="burger-icon" height="32" width="32">
-        <use href=""></use>
-    </svg>
-</button>
-</div>
- </header>
-    <!-- MOBILE MENU 
- 1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них.  
- 2.(Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це mobile menu секція, назва классів повинна бути повязана з цим - приклад class="mobile-menu-title"-->
 
     <main>
       <!-- Loads the specified .html file -->
-      <!-- HERO SECTION 
- 1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них.  
- 2.(Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це hero секція, назва классів повинна бути повязана з цим - приклад class="hero-title"-->
-<section class="hero-section">
-  <div class="hero container">
-    <div class="hero-content">
-      <h1 class="hero-title">Organic Vegetables to Your Diet Today!</h1>
-      <p class="hero-description">
-        Our expertly curated vegetable baskets are made with the freshest,
-        highest quality vegetables available. Fresh Harvest Box has got you
-        covered. Fresh, high-quality vegetables in expertly curated vegetable
-        baskets delivered to you.
-      </p>
-    </div>
-    <div class="hero-image"></div>
-  </div>
-</section>
-
-      <section class="how-works section">
+      <section class="vite-promo">
   <div class="container">
-    <div class="how-works-pictures">
-      <h2 class="visually-hidden">How it works</h2>
-      <picture>
-        <source media="(min-width: 1280px)" srcset="1x, 2x" />
-        <source media="(min-width: 768px)" srcset="1x, 2x" />
-        <source media="(max-width: 767px)" srcset="1x, 2x" />
-
+    <div class="vite-promo-thumb">
+      <a
+        class="vite-promo-link"
+        href="https://vitejs.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Link to Vite official website"
+        title="Vite.js  build tool"
+      >
+        <!-- Path to images as from index.html file -->
         <img
-          class="how-works-image"
-          src=""
-          alt="A woman slices a pear"
-          width="335"
-          height="450"
+          class="pic"
+          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
+          alt="Vite logo"
+          width="640"
+          height="640"
         />
-      </picture>
+      </a>
     </div>
-    <div class="how-works-inform">
-      <p class="how-works-text">
-        To order your
-        <span class="how-works-text-part">vegetable</span> basket, simply follow
-        these <span>easy steps</span>
-      </p>
-      <p class="how-works-text2">
-        Our baskets are assembled with care and delivered straight to your
-        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
-        your home.
-      </p>
-      <ol class="how-works-list">
-        <li class="how-works-item">
-          <p class="how-works-item-text">
-            Just choose
-            <span class="works-item-text-part">the vegetable</span>the vegetable
-            you want to order by clicking on the checkboxes
-            <span class="works-item-text-part"> next to it.</span>
-          </p>
-        </li>
-        <li class="how-works-item">
-          <p class="how-works-item-text">
-            Click on <span class="works-item-text-part">the basket</span> and
-            fill out the form.
-          </p>
-        </li>
-        <li class="how-works-item">
-          <p class="how-works-item-text">
-            Sit back and relax! Your
-            <span class="works-item-text-part">fresh vegetables</span> basket
-            will be delivered.
-          </p>
-        </li>
-      </ol>
-    </div>
+    <h1 class="main-title">
+      <span class="main-title-gradient">Vite</span>
+      Template by
+      <a
+        class="main-title-link"
+        href="https://github.com/goitacademy/vanilla-app-template"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT
+      </a>
+    </h1>
   </div>
 </section>
 
-      <!-- ADVERTISEMENT SECTION
- 1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них. 
- 2. (Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це advertisement секція, назва классів повинна бути повязана з цим - приклад class="advertisement-title") -->
-
-      <section class="vegetables-section">
+      <article class="badges">
   <div class="container">
-    <h2 class="vegetables-title">
-      ORGANIC
-      <span class="vegetables-title-part">VEGETABLES</span>
-    </h2>
-    <p class="vegetables-paragraph">
-      Our organic vegetables are hand-picked from local farms and delivered
-      straight to your doorstep, ensuring that you get the freshest and most
-      nutritious produce possible.
-    </p>
-    <ul class="vegetables-list">
-      <li class="vegetables-item">
-        <div class="vegetables-item-wrapper">
-          <h3 class="vegetables-name">eggplant</h3>
-          <p class="vegetables-dscr">60 USD/KG</p>
-          <img src="" alt="eggplant photo" />
-        </div>
+    <ul class="badges-list">
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HTML Inject
+        </a>
       </li>
-      <li class="vegetables-item">
-        <div class="vegetables-item-wrapper">
-          <h3 class="vegetables-name">leek</h3>
-          <p class="vegetables-dscr">50 USD/KG</p>
-          <img src="" alt="leek photo" />
-        </div>
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Full Reload
+        </a>
       </li>
-
-      <li class="vegetables-item">
-        <div class="vegetables-item-wrapper">
-          <h3 class="vegetables-name">mushrooms</h3>
-          <p class="vegetables-dscr">40 USD/KG</p>
-          <img src="" alt="mushrooms photo" />
-        </div>
-      </li>
-      <li class="vegetables-item">
-        <div class="vegetables-item-wrapper">
-          <h3 class="vegetables-name">corn</h3>
-          <p class="vegetables-dscr">60 USD/KG</p>
-          <img src="" alt="corn photo" />
-        </div>
-      </li>
-      <li class="vegetables-item">
-        <div class="vegetables-item-wrapper">
-          <h3 class="vegetables-name">sweet potatoes</h3>
-          <p class="vegetables-dscr">50 USD/KG</p>
-          <img src="" alt="sweet potatoes photo" />
-        </div>
-      </li>
-      <li class="vegetables-item">
-        <div class="vegetables-item-wrapper">
-          <h3 class="vegetables-name">carrot</h3>
-          <p class="vegetables-dscr">40 USD/KG</p>
-          <img src="" alt="carrot photo" />
-        </div>
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sort Media Queries
+        </a>
       </li>
     </ul>
   </div>
-</section>
-
-      <section class="reviews">
-  <div class="container">
-    <h2>Reviews from our customers</h2>
-    <p>
-      Words of our customers: impressions and opinions about the quality of our
-      services and the freshness of our products.
-    </p>
-    <ul>
-      <li>
-        <img src="" alt="Photo John Wax" width="56" height="56" />
-        <div>
-          <h3>John Wax</h3>
-          <p>
-            These vegetables are my secret to delicious and healthy meals. The
-            quality is always at the highest level, the aroma and taste are
-            enchanting. I advise every fan of real products!
-          </p>
-        </div>
-      </li>
-      <li>
-        <img src="" alt="Photo Victoria Romashenko" width="56" height="56" />
-        <div>
-          <h3>Victoria Romashenko</h3>
-          <p>
-            I love how fast and fresh the vegetables are delivered. Salads
-            always turn out so appetizing, and soups are real masterpieces. The
-            quality is impeccable!
-          </p>
-        </div>
-      </li>
-      <li>
-        <img src="" alt="Photo Ihor Trachuk" width="56" height="56" />
-        <div>
-          <h3>Ihor Trachuk</h3>
-          <p>
-            Recently tried my fresh tomatoes and peppers - amazing! The
-            authenticity of the taste, as if from the garden directly to my
-            table. It is now my main vegetable supplier.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-      <!-- YOUR ORDER SECTION 
- 1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них.  
- 2.(Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це order секція, назва классів повинна бути повязана з цим - приклад class="order-title"-->
-<section class="order-section">
-  <div class="container">
-    <div class="describe-order">
-      <h2 class="visually-hidden">
-        FRESH <span class="text-harvest">HARVEST</span> BOX HAS GOT YOU COVERED
-      </h2>
-      <p class="description-benefits-order">
-        Our boxes are packed with delicious, nutritious vegetables, perfect for
-        anyone looking to eat healthier or support local farmers. Order your box
-        today and start enjoying the best that nature has to offer!
-      </p>
-    </div>
-    <div class="modal-window">
-      <p class="modal-text">
-        Ordering <span class="text-from-us">from us</span> is quick and easy!
-        Fill out <span class="text-from-us">the form</span> below and we will
-        contact you !
-      </p>
-      <form>
-        <div class="label-input">
-          <input
-            class="input-form"
-            type="text"
-            name="user-name"
-            placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <p class="text-valid">Succes!</p>
-          <p class="text-invalid">Invalid email, try again</p>
-        </div>
-        <div class="label-input">
-          <input
-            class="input-form"
-            type="email"
-            name="user-email"
-            placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <p class="text-valid">Succes!</p>
-          <p class="text-invalid">Invalid email, try again</p>
-        </div>
-        <div class="textarea-form">
-          <textarea
-            class="textarea-label"
-            name="user-comment"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-        <button class="button-send" type="submit">Send</button>
-      </form>
-    </div>
-    <div class="social-networks">
-      <div class="follow-img">
-        <picture>
-          <source media="(min-width: 1158px)" srcset="" />
-
-          <source media="(min-width: 768px)" srcset="" />
-
-          <source media="(max-width: 767px)" srcset="" />
-
-          <img
-            class="follow-photo"
-            src=""
-            alt="Photo Follow Networks"
-            width="593"
-            height="381"
-          />
-        </picture>
-      </div>
-      <div class="social-media">
-        <p class="exhortation-follow">Follow us on our social networks:</p>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a
-              href="https://www.instagram.com/goitclub/"
-              class="social-list-link"
-              >instagram
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="https://www.youtube.com/c/GoIT " class="social-list-link"
-              >facebook
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a
-              href="https://www.facebook.com/goITclub/"
-              class="social-list-link"
-              >youtube
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+</article>
 
     </main>
-    <footer>
-    <div class="footer container">
 
-        <!-- Логотип компанії + Слоган компанії -->
-        <div class="footer-logo-container">
-            <a href="index.html">
-                <svg class="logo-svg" width="168" height="16">
-                    <use href=""></use>
-                </svg>
-            </a>
-            <p class="footer-slogan">Whether you're looking for a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice.</p>
-        </div>
-
-        <!-- Список якірних посилань -->
-         <div class="footer-nav-container">
-            <ul class="footer-nav">
-                <li class="footer-item">
-                    <a href="">how it works</a>
-                </li>
-                <li class="footer-item">
-                    <a href="">vegetables</a>
-                </li>
-                <li class="footer-item">
-                    <a href="">reviews</a>
-                </li>
-            </ul>
-         </div>
-
-         <!-- Контактні дані -->
-          <div class="contacts">
-            <address>
-                <ul>
-                    <li><a href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-                    <li><a href="">1678 S. Pioneer Road Salt Lake City UT 84104</a></li>
-                </ul>
-            </address>
-
-            <!-- <address>
-                <a href="tel:+380684439426">+380 (68) 443-94-26</a> 
-                1678 S. Pioneer Road Salt <br /> Lake City UT 84104
-                </address>
-          </div> -->
-
-          <!-- Політика та авторскі права -->
-           <div class="footer-bottom">
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a> / <a href="#">Cookie settings</a>
-            </div>
-           </div>
-           <div class="copyright">&copy;Green Harvest 2023</div>
-    </div>
+    <footer class="footer">
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://goit.global/ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT team
+      </a>
+    </p>
+  </div>
 </footer>
+
+
   </body>
 </html>
