@@ -28,13 +28,21 @@
   display: flex;
   padding: 3px 10px 0 10px;
   flex-direction: column;
-  font: 600 48px / 1.04 'Inter Tight', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 104.167% */
+  letter-spacing: -0.72px;
   text-transform: uppercase;
   color: #141414;
 }
 
 .advertisement-discount {
-  font: 600 48px / 1.04 'Inter Tight', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 50px; /* 104.167% */
+  letter-spacing: -0.72px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
