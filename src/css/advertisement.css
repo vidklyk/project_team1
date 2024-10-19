@@ -1,13 +1,14 @@
-.container {
-  align-items: flex-start;
+.advertisement {
+  /*   align-items: flex-start;
   justify-content: flex-start;
 
-  gap: 10px;
+  
   padding: 80px 10px;
   min-width: 320px;
   max-width: 375px;
   height: 469px;
-  background: #fbfbfb;
+  */
+  background-color: #fbfbfb;
 }
 
 .visually-hidden {
@@ -25,6 +26,7 @@
 
 .advertisement-text {
   display: flex;
+  padding: 3px 10px 0 10px;
   flex-direction: column;
   font: 600 48px / 1.04 'Inter Tight', sans-serif;
   text-transform: uppercase;
@@ -43,11 +45,14 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  /*
+    .container {
     padding: 0 32px;
     max-width: 768px;
     height: 488px;
   }
+    */
+
   .advertisement-text {
     font-size: 64px;
     line-height: 1.09;
@@ -59,11 +64,13 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .container {
+  /*  .container {
     padding: 0 100px;
     max-width: 1280px;
     height: 440px;
   }
+    */
+
   .advertisement-text {
     display: inline-block;
 
