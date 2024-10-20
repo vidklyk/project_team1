@@ -60,14 +60,14 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero {
+  .hero-image {
     background-image: url(../img/hero/hero-mobile@2x.jpg);
   }
 }
 
 /* ----------- Версія для планшетів ----------- */
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .hero {
     width: 100%;
     max-width: 768px;
@@ -115,16 +115,15 @@
 }
 /* Підтримка Retina для планшетів */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero {
+  .hero-image {
     background-image: url(../img/hero/hero-tablet@2x.jpg);
   }
 }
 
 /* ----------- Версія для десктопів ----------- */
 
-@media (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   .hero {
-    width: 100%;
     max-width: 1280px;
     display: flex;
     justify-content: space-between;
@@ -175,7 +174,7 @@
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero {
+  .hero-image {
     background-image: url(../img/hero/hero@2x.jpg);
   }
 }
