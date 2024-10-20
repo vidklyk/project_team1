@@ -26,7 +26,7 @@
 
 .advertisement-text {
   display: flex;
-  padding: 3px 10px 0 10px;
+
   flex-direction: column;
   font-size: 48px;
   font-style: normal;
@@ -43,7 +43,7 @@
   font-weight: 600;
   line-height: 50px; /* 104.167% */
   letter-spacing: -0.72px;
-
+  padding: 3px 10px 0 10px;
   text-transform: uppercase;
   color: #fbfbfb;
   border-radius: 12px;
