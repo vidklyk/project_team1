@@ -17,7 +17,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <script type="module" crossorigin src="/project_team1/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project_team1/assets/index-CUvM0Ywj.css">
+    <link rel="stylesheet" crossorigin href="/project_team1/assets/index-D8ixMLZz.css">
   </head>
   <body>
     <!-- HEADER SECTION
@@ -46,9 +46,43 @@
 </button>
 </div>
  </header>
-    <!-- MOBILE MENU 
- 1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них.  
- 2.(Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це mobile menu секція, назва классів повинна бути повязана з цим - приклад class="mobile-menu-title"-->
+    <div class="mobile-menu">
+  <div class="mobile-menu-container">
+    <button class="mobile-menu-close" type="button">
+      <svg class="mobile-menu-close-icon" width="32" height="32">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-nav-list">
+        <li class="mobile-menu-nav-item">
+          <a
+            class="mobile-menu-nav-link mobile-menu-how-it-works-link"
+            href="../index.html#how-it-works"
+            >How It Works</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a
+            class="mobile-menu-nav-link mobile-menu-vegetables-link"
+            href="../index.html#vegetables"
+            >Vegetables</a
+          >
+        </li>
+        <li class="mobile-menu-item">
+          <a
+            class="mobile-menu-nav-link mobile-menu-reviews-link"
+            href="../index.html#reviews"
+            >Reviews</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <a class="mobile-menu-shop-now-link" href="">Shop now</a>
+  </div>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
