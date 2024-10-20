@@ -1,3 +1,194 @@
-.how-works {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.how-works-image {
+  border-radius: 30px;
+  background: rgba(20, 20, 20, 0.3), url('');
+}
+.how-works-section-img {
+  background-color: #7a3145;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  flex-direction: column;
+}
+.how-works-section-steps {
+  background-color: #576f35;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.how-works-pictures {
+  display: flex;
+  /* background-color: #7a3145; */
+}
+.how-works-inform {
+  /* background-color: #576f35; */
+}
+
+.how-works-text {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.how-works-text-part {
+  color: rgba(251, 251, 251, 0.3);
+}
+
+.how-works-text2 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #fbfbfb;
+  padding-bottom: 40px;
+}
+
+.how-works-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  counter-reset: step-counter;
+}
+
+.how-works-list .how-works-item {
+  display: flex;
+  align-items: center;
+}
+.how-works-item {
+  display: flex;
+  border-radius: 15px;
+  padding: 17px 27px 17px 29px;
+  background-color: #fbfbfb;
+}
+
+.how-works-item-text {
+  padding-left: 29px;
+  color: rgba(20, 20, 20, 0.6);
+  font-family: 'Inter Tight';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.875rem;
+  letter-spacing: -0.015rem;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Закруглені кути контейнера */
+}
+
+.circle-number {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background-color: #7a3145; /* Темний колір фону */
+  color: white;
+  border-radius: 50%; /* Робимо коло */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbfbfb;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 100% */
+  letter-spacing: -0.4px;
+  box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.2); /* Зовнішній шар (світліший) */
+}
+
+.works-item-text-part {
+  font-weight: 700;
   color: #141414;
+}
+/* ==================Tablet================== */
+@media only screen and (min-width: 768px) {
+  .how-works-pictures {
+    padding: 0px 32px;
+  }
+  .how-works-section-img {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .how-works-image {
+    width: 640px;
+    height: 640px;
+  }
+
+  .how-works-section-steps {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .how-works-inform {
+    padding-right: 127px;
+    padding-left: 127px;
+  }
+
+  .how-works-text {
+    font-size: 32px;
+  }
+
+  .how-works-text2 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+/* ================== Desktop ================= */
+@media only screen and (min-width: 1280px) {
+  .how-works-image {
+    max-width: 430px;
+    max-height: 559px;
+  }
+  how-works-img-container {
+    padding: 0;
+  }
+  .how-works-pictures {
+    padding: 0;
+  }
+
+  .how-works-img-container {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .how-works-steps-container {
+    margin-left: 0;
+  }
+  .how-works-inform {
+    max-width: 450px;
+    padding: 0;
+  }
+  .how-works {
+    display: flex;
+  }
+
+  .how-works-section-img {
+    width: 50%; /* Займає половину екрану */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .how-works-section-steps {
+    width: 50%; /* Займає половину екрану */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
