@@ -64,11 +64,12 @@
 .how-works-list .how-works-item {
   display: flex;
   align-items: center;
+  counter-increment: step-counter;
 }
 .how-works-item {
   display: flex;
   border-radius: 15px;
-  padding: 12px 27px 12px 24px;
+  padding: 17px 29px 17px 27px;
   background-color: #fbfbfb;
 }
 
@@ -81,13 +82,6 @@
   font-weight: 500;
   line-height: 0.875rem;
   letter-spacing: -0.015rem;
-}
-
-.circle-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px; /* Закруглені кути контейнера */
 }
 
 .how-works-list .how-works-item::before {
