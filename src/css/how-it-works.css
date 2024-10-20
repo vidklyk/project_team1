@@ -29,6 +29,15 @@
 
 .how-works-pictures {
   display: flex;
+  /* background-color: #7a3145; */
+}
+.how-works-inform {
+  /* background-color: #576f35; */
+
+}
+
+.how-works-pictures {
+  display: flex;
 }
 
 .how-works-text {
@@ -64,13 +73,14 @@
 .how-works-list .how-works-item {
   display: flex;
   align-items: center;
-  counter-increment: step-counter;
 }
 .how-works-item {
   display: flex;
   border-radius: 15px;
+
   padding: 12px 27px 12px 24px; /*по макету мені ці параметри показує, для планшету та десктопу, перший пункт має лівий відступ 25 */
   /* padding: 17px 27px 17px 29px; */
+
   background-color: #fbfbfb;
 }
 
@@ -86,6 +96,7 @@
 }
 
 .circle-container {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +120,6 @@
   box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.2);
   padding: 12px 24px;
 }
-
 .works-item-text-part {
   font-weight: 700;
   color: #141414;
@@ -155,6 +165,7 @@
   }
   .how-works-img-container {
     padding: 0 100px;
+
   }
   .how-works-pictures {
     padding: 0;
@@ -181,7 +192,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .how-works-section-steps {
     width: 50%; /* Займає половину екрану */
     display: flex;
