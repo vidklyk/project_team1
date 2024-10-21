@@ -10,6 +10,8 @@
     align-items: center;
     justify-content: flex-start;
 }
+
+
 /* Логотип компанії + Слоган компанії */
 
 .footer-logo-container {
@@ -34,7 +36,9 @@
 
 /* Список якірних посилань */
 
-
+.footer-info-container {
+    margin-bottom: 80px;
+}
 
 .footer-nav-container {
     margin-bottom: 40px;
@@ -68,7 +72,7 @@
 
 .footer-contacts-container {
     width: 179px;
-    margin-bottom: 80px;
+    
 }
 .footer-contacts-list {
     list-style: none;
@@ -100,7 +104,6 @@
 
 .footer-bottom {
 display: flex;
-flex-direction: row;
 align-items: center;
 justify-content: space-between;
 gap: 49px;
@@ -136,39 +139,50 @@ gap: 49px;
     color: rgba(251, 251, 251, 0.5);
 } 
 
-/* 
-.left {
-    width: 171px;
-    height: 14px;
-    
-}
-
-.right {
-    width: 116px;
-    height: 14px;
-} */
-
-
 
 
 @media only screen and (min-width: 768px) {
     .footer {
-        flex-direction: row;
-        align-items: start;
-        justify-content: space-between;
+        padding: 32px;
+    }
+    .footer-container {
+        justify-content: flex-start;
+        align-items: baseline;  
+    }
+
+    .footer-logo-container {
+        width: 265px;
+    }
+
+    .footer-logo-svg {
+        width: 194px;
+        height: 18px;
+        margin-bottom: 25px;
+    }
+   
+    .footer-slogan {
+        font-size: 16px;
+        line-height: 1.25;
+ }
+
+
+
+    .footer-nav-container {
+        margin-bottom: 64px;
     }
 
     .footer-logo-container {
         max-width: 265px;
         margin-right: auto;
+        margin-left: 0;
     }
 
     .footer-info-container {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
         margin-left: auto;
     }
+
 
     
     .footer-nav-item {
@@ -178,14 +192,66 @@ gap: 49px;
         margin-bottom: 0;
     }
 
-    .footer-bottom {
-        flex-wrap: wrap;
+    .footer-nav-link {
+        font-size: 32px;
     }
+
+
+    .footer-contacts-item {
+        margin-bottom: 25px;
+    }
+    
+    .footer-contacts-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-contacts-link {
+        font-size: 14px;
+        line-height: 1.11;
+        letter-spacing: -0.01em;
+    }
+
+
+  .footer-bottom {
+    gap: 284px;
+  }
+
+
+
+    
 }
 
 
   /* Styles for Desktop devices */
   @media only screen and (min-width: 1280px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 100px;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+        
+    }
+
+    .footer-logo-container {
+        margin-right: 0;
+    }
+
+    .footer-info-container {
+        flex-direction: row;
+        margin-bottom: 125px;
+    }
     
+    .footer-nav-container {
+        margin-right: 121px;
+    }
+
+    .footer-bottom {
+        justify-content: space-between;
+        gap: 610px;
+      }
+   
   }
   
