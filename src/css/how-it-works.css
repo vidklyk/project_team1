@@ -29,10 +29,6 @@
 
 .how-works-pictures {
   display: flex;
-  /* background-color: #7a3145; */
-}
-.how-works-inform {
-  /* background-color: #576f35; */
 }
 
 .how-works-text {
@@ -68,11 +64,12 @@
 .how-works-list .how-works-item {
   display: flex;
   align-items: center;
+  counter-increment: step-counter;
 }
 .how-works-item {
   display: flex;
   border-radius: 15px;
-  padding: 17px 27px 17px 29px;
+  padding: 17px 29px 17px 27px;
   background-color: #fbfbfb;
 }
 
@@ -87,32 +84,23 @@
   letter-spacing: -0.015rem;
 }
 
-.circle-container {
+.how-works-list .how-works-item::before {
+  content: counter(step-counter);
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px; /* Закруглені кути контейнера */
-}
-
-.circle-number {
-  position: relative;
-  width: 42px;
-  height: 42px;
-  background-color: #7a3145; /* Темний колір фону */
-  color: white;
-  border-radius: 50%; /* Робимо коло */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fbfbfb;
-  font-size: 20px;
-  font-style: normal;
+  width: 52px;
+  height: 52px;
+  background-color: #7a3145;
   font-weight: 600;
-  line-height: 20px; /* 100% */
-  letter-spacing: -0.4px;
-  box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.2); /* Зовнішній шар (світліший) */
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.2);
+  padding: 12px 24px;
 }
-
 .works-item-text-part {
   font-weight: 700;
   color: #141414;
@@ -156,8 +144,8 @@
     max-width: 430px;
     max-height: 559px;
   }
-  how-works-img-container {
-    padding: 0;
+  .how-works-img-container {
+    padding: 0 100px;
   }
   .how-works-pictures {
     padding: 0;
@@ -184,7 +172,6 @@
     justify-content: center;
     align-items: center;
   }
-
   .how-works-section-steps {
     width: 50%; /* Займає половину екрану */
     display: flex;
