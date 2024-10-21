@@ -9,7 +9,7 @@
 .describe-order {
   margin-bottom: 40px;
 }
-.visually-hidden {
+.order-title-text {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.04;
@@ -196,13 +196,14 @@
     margin-bottom: 50px;
     padding: 0px;
   }
-  .visually-hidden {
+  .order-title-text {
     font-weight: 600;
     font-size: 64px;
     line-height: 1;
     margin-bottom: 25px;
   }
   .description-benefits-order {
+    max-width: 640px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -278,6 +279,11 @@
     flex-direction: row;
     row-gap: 24px;
   }
+
+  .order-title-text {
+    max-width: 751px;
+  }
+
   .modal-window {
     padding: 50px;
     max-width: 529px;
