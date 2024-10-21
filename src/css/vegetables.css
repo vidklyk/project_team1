@@ -78,6 +78,9 @@
     font-size: 16px;
     line-height: 1.25;
   }
+  .vegetables-item-wrapper {
+    width: 342px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -86,5 +89,8 @@
   }
   .vegetables-list {
     gap: 28px 21px;
+  }
+  .vegetables-item-wrapper {
+    width: 346px;
   }
 }
