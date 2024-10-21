@@ -2,7 +2,7 @@
  1. Коли клонували репозиторій, потрібно у консолі прописати команду для переходу на свою Гілку - git switch -c "назва вашої гілки" без лапок. Після чого обираємо свої файли html/css та працюємо в них.  
  2.(Не забувай! Назва класу повинна бути повязана з секцією яку ти розробляєш.Наприклад якщо це order секція, назва классів повинна бути повязана з цим - приклад class="order-title"-->
 <section class="order-section">
-  <div class="container">
+  <div class="container your-order-container">
     <div class="describe-order">
       <h2 class="visually-hidden">
         FRESH <span class="text-harvest">HARVEST</span> BOX HAS GOT YOU COVERED
@@ -13,88 +13,117 @@
         today and start enjoying the best that nature has to offer!
       </p>
     </div>
-    <div class="modal-window">
-      <p class="modal-text">
-        Ordering <span class="text-from-us">from us</span> is quick and easy!
-        Fill out <span class="text-from-us">the form</span> below and we will
-        contact you !
-      </p>
-      <form>
-        <div class="label-input">
-          <input
-            class="input-form"
-            type="text"
-            name="user-name"
-            placeholder="Full Name"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <p class="text-valid">Succes!</p>
-          <p class="text-invalid">Invalid email, try again</p>
-        </div>
-        <div class="label-input">
-          <input
-            class="input-form"
-            type="email"
-            name="user-email"
-            placeholder="Email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-            required
-          />
-          <p class="text-valid">Succes!</p>
-          <p class="text-invalid">Invalid email, try again</p>
-        </div>
-        <div class="textarea-form">
-          <textarea
-            class="textarea-label"
-            name="user-comment"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-        <button class="button-send" type="submit">Send</button>
-      </form>
-    </div>
-    <div class="social-networks">
-      <div class="follow-img">
-        <picture>
-          <source media="(min-width: 1158px)" srcset="" />
-
-          <source media="(min-width: 768px)" srcset="" />
-
-          <source media="(max-width: 767px)" srcset="" />
-
-          <img
-            class="follow-photo"
-            src=""
-            alt="Photo Follow Networks"
-            width="593"
-            height="381"
-          />
-        </picture>
+    <div class="order-container">
+      <div class="modal-window">
+        <p class="modal-text">
+          Ordering <span class="text-from-us">from us</span> is quick and easy!
+          Fill out <span class="text-the-from">the form</span> below and we will
+          contact you !
+        </p>
+        <form>
+          <div class="label-input">
+            <input
+              class="input-form"
+              type="text"
+              name="user-name"
+              placeholder="Full Name"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <div class="label-input">
+            <input
+              class="input-form"
+              type="email"
+              name="user-email"
+              placeholder="Email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              required
+            />
+            <p class="text-valid">Succes!</p>
+            <p class="text-invalid">Invalid email, try again</p>
+          </div>
+          <div class="textarea-form">
+            <textarea
+              class="textarea"
+              name="user-comment"
+              placeholder="Comment"
+              required
+            ></textarea>
+          </div>
+          <button class="button-send" type="submit">Send</button>
+        </form>
       </div>
-      <div class="social-media">
-        <p class="exhortation-follow">Follow us on our social networks:</p>
-        <ul class="social-list">
-          <li class="social-list-item">
-            <a
-              href="https://www.instagram.com/goitclub/"
-              class="social-list-link"
-              >instagram
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a href="https://www.youtube.com/c/GoIT " class="social-list-link"
-              >facebook
-            </a>
-          </li>
-          <li class="social-list-item">
-            <a
-              href="https://www.facebook.com/goITclub/"
-              class="social-list-link"
-              >youtube
-            </a>
-          </li>
-        </ul>
+      <div class="social-networks">
+        <div class="follow-img">
+          <picture>
+            <source
+              class="order-img"
+              media="(min-width: 1158px)"
+              srcset="
+                /src/img/your-order/your-order-desk.png    1x,
+                /src/img/your-order/your-order-desk@2x.png 2x
+              "
+              width="427"
+              height="273"
+            />
+
+            <source
+              class="order-img"
+              media="(min-width: 768px)"
+              srcset="
+                /src/img/your-order/your-order-tab.png    1x,
+                /src/img/your-order/your-order-tab@2x.png 2x
+              "
+              width="528"
+              height="273"
+            />
+
+            <source
+              class="order-img"
+              media="(max-width: 767px)"
+              srcset="
+                /src/img/your-order/your-order-mob.png    1x,
+                /src/img/your-order/your-order-mob@2x.png 2x
+              "
+              width="295"
+              height="273"
+            />
+            <img
+              class="follow-picture"
+              src="/src/img/your-order/your-order-desk.png"
+              alt="Photo Follow Networks"
+              width="593"
+              height="381"
+            />
+          </picture>
+        </div>
+        <div class="social-media">
+          <p class="exhortation-follow">Follow us on our social networks:</p>
+          <ul class="social-list">
+            <li class="social-list-item">
+              <a
+                href="https://www.instagram.com/goitclub/"
+                class="social-list-link"
+                >instagram
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="https://www.youtube.com/c/GoIT " class="social-list-link"
+                >facebook
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a
+                href="https://www.facebook.com/goITclub/"
+                class="social-list-link"
+                >youtube
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
