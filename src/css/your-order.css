@@ -4,6 +4,7 @@
 .order-section {
   background-color: #7a3145;
   align-items: center;
+  padding: 0;
 }
 .describe-order {
   margin-bottom: 40px;
@@ -29,6 +30,8 @@
 .order-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 .modal-window {
@@ -36,7 +39,7 @@
   border-radius: 30px;
   padding: 40px 20px;
   max-width: 628px;
-  max-height: 533px;
+  max-height: 100%;
   background-color: #fbfbfb;
   overflow: none;
 }
@@ -58,7 +61,6 @@
   color: #576f35;
 }
 .label-input {
-  display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -130,32 +132,26 @@
   padding-top: 14px;
 }
 .button-send {
-  display: block;
   margin: 0 auto;
-  min-width: 295px;
-  height: 50px;
   padding: 16px 129px;
   background-color: #576f35;
   border-radius: 30px;
   cursor: pointer;
-  text-align: center;
-  justify-content: center;
   border: none;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.01em;
-  text-transform: uppercase;
   color: #fbfbfb;
 }
 .button-send:is(:hover, :focus) {
   border-color: brown;
 }
 .social-networks {
-  display: block;
   border-radius: 30px;
   padding: 40px 20px;
   max-width: 335px;
+  max-height: 100%;
   background-color: #576f35;
 }
 .follow-img {
@@ -194,7 +190,7 @@
 }
 @media screen and (min-width: 768px) {
   .your-order-container {
-    padding: 100px 70px;
+    padding: 100px 32px;
   }
   .describe-order {
     margin-bottom: 50px;
@@ -216,7 +212,6 @@
   .modal-window {
     padding: 50px 100px;
     max-width: 628px;
-    max-height: 534px;
   }
   .modal-text {
     margin-bottom: 50px;
@@ -273,12 +268,13 @@
     margin-right: 12px;
   }
 }
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
   .your-order-container {
     padding: 100px 100px;
   }
   .order-container {
     display: flex;
+    align-items: normal;
     flex-direction: row;
     row-gap: 24px;
   }
