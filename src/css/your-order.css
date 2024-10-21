@@ -155,7 +155,7 @@
   background-color: #576f35;
 }
 .follow-img {
-  background-image: rgba(20, 20, 20, 0.3);
+  background-image: linear-gradient(rgba(20, 20, 20, 0.3));
 }
 .exhortation-follow {
   margin-top: 20px;
