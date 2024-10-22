@@ -31,11 +31,25 @@
   flex-direction: column;
   gap: 20px;
 }
+
 .vegetables-item-wrapper {
   border-radius: 40px;
   padding: 32px 26px;
   width: 100%;
   background-color: #fbfbfb;
+  transition: box-shadow 0.3s ease;
+  -o-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.vegetables-item-wrapper:hover {
+  -o-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 .vegetables-name {
   font-family: 'Inter Tight', sans-serif;
