@@ -122,7 +122,9 @@
   }
 
   .hero-image-container {
-    margin-left: 20px;
+    margin: 0;
+    margin-left: 10px;
+    flex-grow: 1;
   }
 
   .hero-content {
@@ -151,7 +153,6 @@
 
   .hero-image {
     background-image: url(../img/hero/hero.jpg);
-    width: 650px;
     height: 800px;
     background-size: cover;
   }

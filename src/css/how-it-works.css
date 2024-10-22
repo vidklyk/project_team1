@@ -44,7 +44,7 @@
   text-transform: uppercase;
   color: #fbfbfb;
   width: 100%;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .how-works-text-part {
@@ -56,7 +56,7 @@
   font-size: 14px;
   line-height: 1.28571;
   color: #fbfbfb;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .how-works-list {
@@ -79,7 +79,7 @@
 }
 
 .how-works-item-text {
-  padding-left: 29px;
+  margin-left: 29px;
   color: rgba(20, 20, 20, 0.6);
   font-family: 'Inter Tight';
   font-size: 12px;
@@ -94,8 +94,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 52px;
-  height: 52px;
+  width: 42px;
+  height: 42px;
   background-color: #7a3145;
   font-weight: 600;
   font-size: 20px;
@@ -104,7 +104,7 @@
   color: #fbfbfb;
   border-radius: 50%;
   box-shadow: 0 0 0 5px rgba(122, 49, 69, 0.2);
-  padding: 12px 24px;
+  flex-shrink: 0;
 }
 .works-item-text-part {
   font-weight: 700;
