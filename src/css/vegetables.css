@@ -43,7 +43,8 @@
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.vegetables-item-wrapper:hover {
+.vegetables-item-wrapper:hover,
+.vegetables-item-wrapper:focus {
   -o-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
