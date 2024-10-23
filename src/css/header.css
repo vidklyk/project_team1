@@ -1,15 +1,27 @@
 .page-header {
-  padding-top: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background: transparent;
+  transition: backdrop-filter 0.3s ease, background 0.3s ease;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 0;
   width: 100%;
   z-index: 999;
 }
 
+.page-header.scrolled {
+  position: fixed;
+  border-radius: 20px;
+  border: 1px rgba(255, 255, 255, 0.295) solid;
+  background: rgba(255, 255, 255, 0.123); /* Прозорий білий */
+  backdrop-filter: blur(8px); /* Розмиття */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тінь */
+}
+
 .header-container {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,8 +66,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-header {
+  .page-header.scrolled {
     padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .page-header {
   }
 
   .header-container {

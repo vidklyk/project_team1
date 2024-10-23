@@ -16,3 +16,16 @@
     refs.modal.classList.toggle('is-open');
   }
 })();
+
+// Знаходимо хедер
+const header = document.querySelector('.page-header');
+
+// Відстежуємо подію скролу
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    // Клас активується при прокрутці більше 50 пікселів
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
